@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'memory.dart';
 
 class Calculator extends StatefulWidget {
@@ -37,10 +36,8 @@ class _CalculatorState extends State<Calculator> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: AutoSizeText(
+              child: Text(
                 _memory.result,
-                minFontSize: 20.0,
-                maxFontSize: 80.0,
                 maxLines: 1,
                 textAlign: TextAlign.end,
                 style: const TextStyle(
